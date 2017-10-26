@@ -13,8 +13,6 @@ def jieba_lines(lines):
     return cut_lines
 
 
-
-
 if __name__ == '__main__':
 
     ###### Feature Engineering ######
@@ -47,9 +45,9 @@ if __name__ == '__main__':
         print(questions.loc[:2]['Option%d' % (i)])
         print()
 
-    # lines = programs[0].loc[1]['Content'].split('\n')
-    # for line in lines:
-    #     print(jieba.lcut(line))
+    lines = programs[0].loc[1]['Content'].split('\n')
+    for line in lines:
+        print(jieba.lcut(line))
 
     #
     ###### Preprocessing: Cut Words ######
